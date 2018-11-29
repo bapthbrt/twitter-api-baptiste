@@ -11,4 +11,4 @@ class TestHomeView(TestCase):
     def test_home(self):
         response = self.client.get("/hello")
         text = response.data.decode()
-        self.assertIn("Hello from a Blueprint!", text)
+        self.assertIn("Goodbye World!", text)
